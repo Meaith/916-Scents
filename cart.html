@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Review your Veloura perfume order and checkout with the seller on WhatsApp."
+    />
+    <title>Your Cart — Veloura</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="config.js" defer></script>
+    <script src="store.js" defer></script>
+    <script src="cart-page.js" defer></script>
+  </head>
+  <body>
+    <div class="announcement">
+      A little luxury, delivered to your door.
+      <span>Checkout directly on WhatsApp</span>
+    </div>
+    <header class="site-header">
+      <a class="logo" href="index.html">veloura<span>.</span></a>
+      <nav class="main-nav" id="main-nav">
+        <a href="index.html">Home</a><a href="products.html">All perfumes</a
+        ><a href="index.html#story">Our story</a>
+      </nav>
+      <div class="header-actions">
+        <button
+          class="menu-toggle"
+          id="menu-toggle"
+          aria-label="Toggle navigation"
+        >
+          ☰
+        </button>
+      </div>
+    </header>
+    <main class="cart-main">
+      <div class="cart-heading">
+        <p class="eyebrow">YOUR SELECTION</p>
+        <h1>Your <em>cart.</em></h1>
+        <p>Take one last look at your fragrances before placing your order.</p>
+      </div>
+      <div class="cart-layout">
+        <section class="cart-items-panel">
+          <div class="cart-panel-heading">
+            <h2>Shopping bag</h2>
+            <span id="cart-item-count">0 items</span>
+          </div>
+          <div id="cart-items">
+            <p class="loading-note">Loading your cart…</p>
+          </div>
+          <a class="text-link continue-shopping" href="products.html"
+            >← Continue shopping</a
+          >
+        </section>
+        <aside class="cart-summary">
+          <p class="eyebrow">ORDER SUMMARY</p>
+          <div class="summary-row">
+            <span>Items subtotal</span><strong id="cart-subtotal">₦0</strong>
+          </div>
+          <p class="delivery-note">
+            Delivery fee is confirmed by the seller on WhatsApp.
+          </p>
+          <div class="summary-total">
+            <span>Total</span><strong id="cart-total">₦0</strong>
+          </div>
+          <button class="primary-button checkout-button" id="checkout-button">
+            Checkout on WhatsApp
+          </button>
+          <p class="secure-note">
+            Your order details will be prepared in a WhatsApp message. No
+            payment is taken on this website.
+          </p>
+        </aside>
+      </div>
+    </main>
+    <footer class="site-footer">
+      <a class="logo footer-logo" href="index.html">veloura<span>.</span></a>
+      <p>Wear the feeling. Keep the memory.</p>
+      <div class="footer-links">
+        <a href="products.html">Shop</a><a href="index.html">Home</a>
+      </div>
+      <small>© <span id="year"></span> Veloura Fragrance House.</small>
+    </footer>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>

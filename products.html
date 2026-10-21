@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Shop the full Veloura perfume collection. Browse fragrances for her, him and everyone."
+    />
+    <title>All Perfumes — Veloura</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="config.js" defer></script>
+    <script src="store.js" defer></script>
+    <script src="products-page.js" defer></script>
+  </head>
+  <body>
+    <div class="announcement">
+      A little luxury, delivered to your door.
+      <span>Order directly on WhatsApp</span>
+    </div>
+    <header class="site-header">
+      <a class="logo" href="index.html">916 Scents<span>.</span></a>
+      <nav class="main-nav" id="main-nav">
+        <a href="index.html">Home</a
+        ><a class="current" href="products.html">All perfumes</a
+        ><a href="index.html#story">Our story</a>
+      </nav>
+      <div class="header-actions">
+        <a class="cart-button" href="cart.html"
+          >Cart (<span data-cart-count>0</span>) </a
+        ><button
+          class="menu-toggle"
+          id="menu-toggle"
+          aria-label="Toggle navigation"
+        >
+          ☰
+        </button>
+      </div>
+    </header>
+    <main>
+      <section class="catalog-hero">
+        <p class="eyebrow">THE VELOURA COLLECTION</p>
+        <h1>Find your <em>signature.</em></h1>
+        <p>
+          Explore all our fragrances, from everyday favourites to unforgettable
+          statements.
+        </p>
+      </section>
+      <section class="section-wrap catalog-section">
+        <div class="shop-toolbar">
+          <div class="filter-tabs" role="group" aria-label="Filter perfumes">
+            <button class="filter-btn active" data-filter="all">
+              All scents</button
+            ><button class="filter-btn" data-filter="women">For her</button
+            ><button class="filter-btn" data-filter="men">For him</button
+            ><button class="filter-btn" data-filter="unisex">Unisex</button
+            ><button class="filter-btn" data-filter="trending">Trending</button
+            ><button class="filter-btn" data-filter="bestseller">
+              Best sellers
+            </button>
+          </div>
+          <div class="catalog-controls">
+            <input
+              id="search-input"
+              class="search-input"
+              type="search"
+              placeholder="Search fragrances…"
+              aria-label="Search fragrances"
+            /><label class="sort-label"
+              >Sort
+              <select id="sort-select">
+                <option value="featured">Featured</option>
+                <option value="low">Price: low to high</option>
+                <option value="high">Price: high to low</option>
+                <option value="az">Name: A–Z</option>
+              </select></label
+            >
+          </div>
+        </div>
+        <p class="results-count" id="results-count"></p>
+        <div class="product-grid" id="products-grid">
+          <p class="loading-note">Loading fragrances…</p>
+        </div>
+        <p class="empty-state" id="empty-state" hidden>
+          No perfumes match your search. Try another filter or search term.
+        </p>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <a class="logo footer-logo" href="index.html">916 Scents<span>.</span></a>
+      <p>Wear the feeling. Keep the memory.</p>
+      <div class="footer-links">
+        <a href="index.html">Home</a><a href="admin.html">A</a>
+      </div>
+      <small>© <span id="year"></span> Veloura Fragrance House.</small>
+    </footer>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>

@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Discover trending and best-selling perfumes at Veloura. Find your signature scent."
+    />
+    <title>Veloura — Find Your Signature Scent</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="config.js" defer></script>
+    <script src="store.js" defer></script>
+    <script src="home.js" defer></script>
+  </head>
+  <body>
+    <div class="announcement">
+      A little luxury, delivered to your door.
+      <span>Order directly on WhatsApp</span>
+    </div>
+    <header class="site-header">
+      <a class="logo" href="index.html">veloura<span>.</span></a>
+      <nav class="main-nav" id="main-nav">
+        <a class="current" href="index.html">Home</a
+        ><a href="products.html">All perfumes</a><a href="#story">Our story</a>
+      </nav>
+      <div class="header-actions">
+        <a class="cart-button" href="cart.html"
+          >Cart (<span data-cart-count>0</span>) </a
+        ><button
+          class="menu-toggle"
+          id="menu-toggle"
+          aria-label="Toggle navigation"
+        >
+          ☰
+        </button>
+      </div>
+    </header>
+    <main>
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">THE ART OF FRAGRANCE</p>
+          <h1>Leave a little<br /><em>mystery</em> behind.</h1>
+          <p class="hero-text">
+            Fragrances that feel like you. Discover thoughtful scents for every
+            version of yourself.
+          </p>
+          <a class="primary-button" href="products.html"
+            >Shop all perfumes </a
+          >
+          <div class="hero-note">
+            <span class="tiny-line"></span> YOUR SCENT. YOUR STORY.
+          </div>
+        </div>
+        <div class="hero-image-wrap">
+          <img
+            class="hero-image"
+            src="https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=1200&q=85"
+            alt="Elegant perfume bottle in warm light"
+          />
+          <div class="hero-stamp">
+            <span>SCENT</span><strong>is a<br />memory</strong
+            ><span>IN A BOTTLE</span>
+          </div>
+        </div>
+      </section>
+      <section class="trust-strip">
+        <div><span>✔️</span> Carefully curated scents</div>
+        <div><span>✔️</span> Order on WhatsApp</div>
+        <div><span>✔️</span> Thoughtful delivery</div>
+        <div><span>✔️</span> Made for gifting</div>
+      </section>
+      <section class="section-wrap feature-section">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">THE SCENTS EVERYONE'S TALKING ABOUT</p>
+            <h2>Trending <em>now.</em></h2>
+          </div>
+          <a class="text-link" href="products.html?filter=trending"
+            >Explore trending <span>→</span></a
+          >
+        </div>
+        <div class="product-grid" id="trending-grid">
+          <p class="loading-note">Loading fragrances…</p>
+        </div>
+      </section>
+      <section class="best-section">
+        <div class="section-wrap">
+          <div class="section-heading">
+            <div>
+              <p class="eyebrow">CUSTOMER FAVOURITES</p>
+              <h2>Best <em>sellers.</em></h2>
+            </div>
+            <a class="text-link" href="products.html?filter=bestseller"
+              >Shop best sellers <span>→</span></a
+            >
+          </div>
+          <div class="product-grid" id="bestseller-grid">
+            <p class="loading-note">Loading fragrances…</p>
+          </div>
+        </div>
+      </section>
+      <section class="editorial" id="story">
+        <div class="editorial-image">
+          <img
+            src="https://images.unsplash.com/photo-1615634260167-c8cdede054de?auto=format&fit=crop&w=1200&q=85"
+            alt="Perfume arranged in warm natural light"
+            loading="lazy"
+          />
+        </div>
+        <div class="editorial-copy">
+          <p class="eyebrow">A NOTE FROM VELOURA</p>
+          <h2>Not just a fragrance.<br /><em>A feeling.</em></h2>
+          <p>
+            Some scents whisper. Some enter the room before you do. Find the one
+            that captures the mood you want to carry with you.
+          </p>
+          <a class="text-link" href="products.html"
+            >Find your scent <span>→</span></a
+          >
+        </div>
+      </section>
+      <section class="newsletter section-wrap">
+        <p class="eyebrow">STAY IN THE KNOW</p>
+        <h2>Good things <em>linger.</em></h2>
+        <p>Follow us for new arrivals, fragrance notes, and special offers.</p>
+        <a class="primary-button" href="products.html"
+          >Discover the collection </a
+        >
+      </section>
+    </main>
+    <footer class="site-footer">
+      <a class="logo footer-logo" href="index.html">veloura<span>.</span></a>
+      <p>Wear the feeling. Keep the memory.</p>
+      <div class="footer-links">
+        <a href="products.html">Shop</a
+        ><a
+          href="https://wa.me/2348000000000"
+          id="footer-whatsapp"
+          target="_blank"
+          rel="noopener"
+          >WhatsApp</a
+        ><a href="#story">Our story</a>
+      </div>
+      <small>© <span id="year"></span> Veloura Fragrance House.</small>
+    </footer>
+  </body>
+</html>
